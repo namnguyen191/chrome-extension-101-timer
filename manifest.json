@@ -1,0 +1,29 @@
+{
+  "name": "Getting Started Example",
+  "description": "Build an Extension!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "marker.png",
+    "48": "marker.png",
+    "128": "marker.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "marker.png",
+      "24": "marker.png",
+      "32": "marker.png"
+    },
+    "default_title": "Action title",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "storage",
+    "alarms",
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
